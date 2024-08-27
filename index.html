@@ -3,18 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Proyecto jQuery</title>
-    <!-- Agregar jQuery desde CDN -->
+    <title>Beneficios de jQuery</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <h1>Hola, jQuery</h1>
+    <header>
+        <h1>Beneficios de jQuery</h1>
+        <p>Explora cómo jQuery puede facilitar el desarrollo web.</p>
+    </header>
 
-    <!-- Tu código JavaScript aquí -->
+    <section id="beneficios">
+        <h2>Principales Beneficios</h2>
+        <ul>
+            <li>Selección simplificada de elementos.</li>
+            <li>Manipulación fácil del DOM.</li>
+            <li>Soporte cruzado para navegadores.</li>
+            <li>Efectos y animaciones.</li>
+            <li>Facilitación de solicitudes AJAX.</li>
+        </ul>
+    </section>
+
+    <section id="ejemplos">
+        <h2>Ejemplos en Vivo</h2>
+        <button id="botonEfecto">Mostrar/Ocultar Contenido</button>
+        <div id="contenido" style="display:none;">
+            <p>¡Este contenido se muestra y oculta con jQuery!</p>
+        </div>
+    </section>
+
     <script>
         $(document).ready(function(){
-            $('h1').click(function(){
-                alert('¡Hiciste clic en el título!');
+            $("#botonEfecto").click(function(){
+                $("#contenido").slideToggle();
             });
         });
     </script>
