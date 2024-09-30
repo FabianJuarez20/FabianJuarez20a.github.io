@@ -1,0 +1,179 @@
+/*"Componente Animals en React": {
+  "prefix": "createanimalsjs",
+  "body": [
+    "import React from 'react';",
+    "",
+    "function Animals(props) {",
+    "    return (",
+    "        <div>",
+    "            <p><strong>NOMBRE:</strong>{props.nombre}</p>",
+    "            <p><strong>ESPECIE:</strong>{props.especie}</p>",
+    "            <p><strong>EDAD:</strong>{props.edad}</p>",
+    "        </div>",
+    "    );",
+    "}",
+    "",
+    "export default Animals;"
+  ],
+  "description": "Generador del componente Animals en React",
+  "scope": "javascript"
+}
+
+"Componente Habitats en React": {
+  "prefix": "createhabitatsjs",
+  "body": [
+    "import React from 'react';",
+    "",
+    "function Habitats(props) {",
+    "    return (",
+    "        <div>",
+    "            <p><strong>HABITAT:</strong>{props.habitat}</p>",
+    "            <p><strong>CONTINENTE:</strong>{props.continente}</p>",
+    "            <p><strong>CLIMA:</strong>{props.clima}</p>",
+    "        </div>",
+    "    );",
+    "}",
+    "",
+    "export default Habitats;"
+  ],
+  "description": "Generador del componente Habitats en React",
+  "scope": "javascript"
+}
+
+"Estilos CSS para la aplicación": {
+  "prefix": "createcss",
+  "body": [
+    ".contenido {",
+    "  background-color: beige;",
+    "  text-align: center;",
+    "  margin-top: 50px;",
+    "  margin-bottom: 50px;",
+    "  margin-left: 300px;",
+    "  margin-right: 300px;",
+    "}",
+    "",
+    ".Principal {",
+    "  background-color: orange;",
+    "  text-align: center;",
+    "  align-items: center;",
+    "  color: #282c34;",
+    "}"
+  ],
+  "description": "Estilos CSS para la aplicación del zoológico",
+  "scope": "css"
+}
+
+"Creacion del Cuerpo App en React": {
+  "prefix": "createappjs",
+  "body": [
+    "import Animals from './components/Animals';",
+    "import Habitats from './components/Habitats';",
+    "import './App.css';",
+    "",
+    "function App() {",
+    "    return (",
+    "        <div className='Principal'>",
+    "            <h1>informacion del Zoologico</h1>",
+    "            <div className='contenido'>",
+    "                <Animals nombre ='PEPE' especie ='Pollo' edad ='10' />",
+    "                <Habitats habitat ='pradera' continente ='america' clima ='calido' />",
+    "            </div>",
+    "            <div className='contenido'>",
+    "                <Animals nombre ='Raider' especie ='perro' edad ='4' />",
+    "                <Habitats habitat ='hogar' continente ='america' clima ='seco' />",
+    "            </div>",
+    "            <div className='contenido'>",
+    "                <Animals nombre ='PERRI' especie ='ornitorinco' edad ='15' />",
+    "                <Habitats habitat ='bosque' continente ='asia' clima ='humedo' />",
+    "            </div>",
+    "        </div>",
+    "    );",
+    "}",
+    "",
+    "export default App;"
+  ],
+  "description": "Generador de la funcion App en un proyecto de React",
+  "scope": "javascript"
+
+  Snippet 1:
+import React from "react";
+
+function Animals(props) {
+
+    return (
+        <div>
+
+            <p><strong>NOMBRE:</strong>{props.nombre}</p>
+            <p><strong>ESPECIE:</strong>{props.especie}</p>
+            <p><strong>EDAD:</strong>{props.edad}</p>
+
+
+        </div>
+    );
+}
+
+export default Animals;
+
+Snippet 2:
+import React from "react";
+
+function Habitats(props) {
+    return (
+        <div>
+            <p><strong>HABITAT:</strong>{ props.habitat}</p>
+            <p><strong>CONTINENTE:</strong>{ props.continente}</p>
+            <p><strong>CLIMA:</strong>{ props.clima}</p>
+        </div>
+    );
+}
+
+export default Habitats;
+
+Snippet 3:
+.contenido {
+  background-color: beige;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.Principal {
+background-color: orange;
+text-align: center;
+align-items: center;
+color: #282c34;
+}
+
+Snippet 4:
+import Animals from './components/Animals'
+import Habitats from './components/Habitats'
+import './App.css'
+ 
+
+
+function App() {
+
+
+    return (<div className='Principal'>
+
+        <h1>informacion del Zoologico</h1>
+        <div className='contenido'>
+            <Animals nombre ="PEPE" especie ="Pollo" edad ="10"   />
+            <Habitats habitat ="pradera" continente ="america" clima ="calido" />
+        </div>
+        <div className='contenido'>
+            <Animals nombre ="Raider" especie ="perro" edad ="4"   />
+            <Habitats habitat ="hogar" continente ="america" clima ="seco" />
+        </div>
+        <div className='contenido'>
+            <Animals nombre ="PERRI" especie ="ornitorinco" edad ="15"   />
+            <Habitats habitat ="bosque" continente ="asia" clima ="humedo" />
+        </div>
+    </div>
+    );
+}
+
+export default App;
+}*/

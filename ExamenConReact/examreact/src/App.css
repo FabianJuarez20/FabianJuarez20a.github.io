@@ -1,0 +1,15 @@
+.contenido {
+  background-color: beige;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.Principal {
+background-color: rgb(255, 17, 0);
+text-align: center;
+align-items: center;
+color: #282c34;
+}
