@@ -1,4 +1,4 @@
-import OpenAI from "openai";
+cdimport OpenAI from "openai";
 const openai = new OpenAI();
 
 const completion = await openai.chat.completions.create({
